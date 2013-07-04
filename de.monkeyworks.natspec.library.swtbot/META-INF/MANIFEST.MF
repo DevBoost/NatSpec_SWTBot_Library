@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NatSpec Library for SwtBot
+Bundle-SymbolicName: de.monkeyworks.natspec.library.swtbot
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: MonkeyWorks GmbH, DevBoost GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
