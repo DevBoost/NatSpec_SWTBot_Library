@@ -5,4 +5,5 @@ Bundle-SymbolicName: de.monkeyworks.natspec.library.swtbot.tests
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: MonkeyWorks GmbH, DevBoost GmbH
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Require-Bundle: org.junit;bundle-version="4.11.0"
+Require-Bundle: org.junit;bundle-version="4.11.0",
+ de.monkeyworks.natspec.library.swtbot
