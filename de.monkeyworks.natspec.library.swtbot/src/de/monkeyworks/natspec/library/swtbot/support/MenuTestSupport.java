@@ -1,5 +1,7 @@
 package de.monkeyworks.natspec.library.swtbot.support;
 
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.swtbot.swt.finder.SWTBot;
@@ -17,14 +19,26 @@ public class MenuTestSupport {
 	}
 
 	@TextSyntax("Click menu entry in main menu #1")
-	public void clickInMainMenuFileNewProject(List<String> path) {
+	public void clickMenuEntry(List<String> path) {
+		clickMenuEntry((Collection<String>)path);
+	}
+	
+	public void clickMenuEntry(Collection<String> path) {
 		SWTBotMenu latestEntry = null;
 		for (String entry : path) {
 			if (entry.equals(PATH_SEPARATOR)) {
 				continue;
 			}
-			latestEntry = bot.menu(entry);
+			if(latestEntry == null)
+				latestEntry = bot.menu(entry);
+			else
+				latestEntry = latestEntry.menu(entry);
 		}
+		
 		latestEntry.click();
+	}
+	
+	public void clickMenuEntry(String... path) {
+		clickMenuEntry(Arrays.asList(path));
 	}
 }

@@ -21,7 +21,7 @@ public class HelloWorldExample extends SWTBotTestCase {
 		// Never change this method or any contents of this file, all local changes will be overwritten.
 		
 		// Click menu entry in main menu File > New > Example...
-		menuTestSupport.clickInMainMenuFileNewProject(java.util.Arrays.asList(new java.lang.String[] {"File", ">", "New", ">", "Example..."}));
+		menuTestSupport.clickMenuEntry(java.util.Arrays.asList(new java.lang.String[] {"File", ">", "New", ">", "Example..."}));
 		// Make a Screenshot called New_Examples_Wizard.jpg
 		screenshotTestSupport.makeAScreenshotCalledNewProjectWizard("New_Examples_Wizard.jpg");
 		
