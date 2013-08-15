@@ -12,8 +12,10 @@ Require-Bundle: org.eclipse.swtbot.eclipse.core;bundle-version="2.1.1";visibilit
  org.eclipse.swtbot.swt.finder;bundle-version="2.1.1";visibility:=reexport,
  org.eclipse.ui;bundle-version="3.104.0",
  org.eclipse.e4.ui.workbench;bundle-version="0.11.0",
- org.junit,
- org.eclipse.swtbot.junit4_x;bundle-version="2.1.1";visibility:=reexport
+ org.junit;bundle-version="4.11.0"
+Bundle-ClassPath: lib/de.devboost.natspec.annotations_2.1.1.v201307251050.jar,
+ .
+Bundle-ActivationPolicy: lazy
 Export-Package: de.monkeyworks.natspec.library.swtbot,
- de.monkeyworks.natspec.library.swtbot.support
-Bundle-ClassPath: lib/de.devboost.natspec.annotations_2.1.1.v201307251050.jar
+ de.monkeyworks.natspec.library.swtbot.support,
+ de.monkeyworks.natspec.library.swtbot.util
