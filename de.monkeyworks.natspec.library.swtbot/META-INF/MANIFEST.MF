@@ -12,7 +12,6 @@ Require-Bundle: org.eclipse.swtbot.eclipse.core;bundle-version="2.1.1";visibilit
  org.eclipse.swtbot.swt.finder;bundle-version="2.1.1";visibility:=reexport,
  org.eclipse.ui;bundle-version="3.104.0",
  org.eclipse.e4.ui.workbench;bundle-version="0.11.0",
- de.devboost.natspec.annotations,
  org.junit,
  org.eclipse.swtbot.junit4_x;bundle-version="2.1.1";visibility:=reexport
 Export-Package: de.monkeyworks.natspec.library.swtbot,
