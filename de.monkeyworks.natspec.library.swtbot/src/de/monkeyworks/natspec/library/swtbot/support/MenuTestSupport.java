@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.swtbot.swt.finder.SWTBot;
+import org.eclipse.swtbot.swt.finder.waits.ICondition;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotMenu;
 
 import de.devboost.natspec.annotations.TextSyntax;
@@ -20,25 +21,43 @@ public class MenuTestSupport {
 
 	@TextSyntax("Click menu entry in main menu #1")
 	public void clickMenuEntry(List<String> path) {
-		clickMenuEntry((Collection<String>)path);
+		clickMenuEntry((Collection<String>) path);
 	}
-	
+
 	public void clickMenuEntry(Collection<String> path) {
 		SWTBotMenu latestEntry = null;
-		for (String entry : path) {
+		for (final String entry : path) {
 			if (entry.equals(PATH_SEPARATOR)) {
 				continue;
 			}
-			if(latestEntry == null)
-				latestEntry = bot.menu(entry);
-			else
-				latestEntry = latestEntry.menu(entry);
+			waitUntilMenuEntryAppearsOrTimeout(entry);
+			latestEntry = bot.menu(entry);
 		}
-		
+
 		latestEntry.click();
 	}
-	
+
 	public void clickMenuEntry(String... path) {
 		clickMenuEntry(Arrays.asList(path));
 	}
+
+	private void waitUntilMenuEntryAppearsOrTimeout(final String entry) {
+		bot.waitUntil(new ICondition() {
+			@Override
+			public boolean test() throws Exception {
+				SWTBotMenu candidate = bot.menu(entry);
+				return candidate.isVisible() && candidate.isEnabled();
+			}
+
+			@Override
+			public void init(SWTBot bot) {
+			}
+
+			@Override
+			public String getFailureMessage() {
+				return "Menu '" + entry + "' did not appear.";
+			}
+		});
+	}
+
 }
