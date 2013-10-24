@@ -17,6 +17,10 @@ public class KeyboardTestSupport {
 		keyboard.pressShortcut(KeyStroke.getInstance(key, 0));
 	}
 	
+	public static void pressKey(KeyStroke keystroke) {
+		keyboard.pressShortcut(keystroke);
+	}
+	
 	public static void pressEnter() {
 		keyboard.pressShortcut(SWT.CR, SWT.LF);
 	}
