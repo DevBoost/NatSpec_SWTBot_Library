@@ -15,7 +15,7 @@
 
 		<kepler-repo.url>http://download.eclipse.org/eclipse/updates/4.3</kepler-repo.url>
 		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
-		<swtbot-repo.url>http://download.eclipse.org/technology/swtbot/releases/latest/</swtbot-repo.url>
+		<swtbot-repo.url>http://download.eclipse.org/technology/swtbot/releases/2.2.1/</swtbot-repo.url>
 		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
