@@ -22,7 +22,7 @@
 
 	<modules>
 		<module>de.monkeyworks.natspec.library.swtbot</module>
-		<!--module>de.monkeyworks.natspec.library.swtbot.tests</module-->
+		<module>de.monkeyworks.natspec.library.swtbot.tests</module>
 	</modules>
 
 	<repositories>
