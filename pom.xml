@@ -21,7 +21,7 @@
         <emftext-p2-repo.url>http://emftext.org/update</emftext-p2-repo.url>
         <gef-p2-repo.url>http://download.eclipse.org/tools/gef/updates/releases/</gef-p2-repo.url>
         <epsilon-p2-repo.url>http://download.eclipse.org/epsilon/updates/</epsilon-p2-repo.url>
-        <natspec-p2-repo.url>http://movisa.monkey-works.de/3rd-party-deps/de/devboost/natspec</natspec-p2-repo.url>
+        <natspec-p2-repo.url>http://developer.monkey-works.de/3rd-party-deps/de/devboost/natspec</natspec-p2-repo.url>
         <swtbot-repo.url>http://download.eclipse.org/technology/swtbot/releases/2.1.1/</swtbot-repo.url>
  
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
