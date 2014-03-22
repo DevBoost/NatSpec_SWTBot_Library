@@ -10,15 +10,22 @@
 	<name>NatSpec SWTBot Library</name>
 
 	<properties>
-		<tycho.version>0.17.0</tycho.version>
-		<tycho-extras.version>0.17.0</tycho-extras.version>
-
-		<kepler-repo.url>http://download.eclipse.org/eclipse/updates/4.3/R-4.3.1-201309111000</kepler-repo.url>
-		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
-		<swtbot-repo.url>http://download.eclipse.org/technology/swtbot/releases/2.1.1/</swtbot-repo.url>
-		
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+        <tycho.version>0.17.0</tycho.version>
+        <tycho-extras.version>0.17.0</tycho-extras.version>
+ 
+        <tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
+        <kepler-repo.url>http://download.eclipse.org/eclipse/updates/4.3/R-4.3.1-201309111000</kepler-repo.url>
+        <emf-p2-repo.url>http://download.eclipse.org/modeling/emf/emf/updates/releases/</emf-p2-repo.url>
+        <emftransaction-p2-repo.url>http://movisa.monkey-works.de/3rd-party-deps/org/eclipse/emf/transaction</emftransaction-p2-repo.url>
+        <emfvalidation-p2-repo.url>http://movisa.monkey-works.de/3rd-party-deps/org/eclipse/emf/validation</emfvalidation-p2-repo.url>
+        <emftext-p2-repo.url>http://emftext.org/update</emftext-p2-repo.url>
+        <gef-p2-repo.url>http://download.eclipse.org/tools/gef/updates/releases/</gef-p2-repo.url>
+        <epsilon-p2-repo.url>http://download.eclipse.org/epsilon/updates/</epsilon-p2-repo.url>
+        <natspec-p2-repo.url>http://movisa.monkey-works.de/3rd-party-deps/de/devboost/natspec</natspec-p2-repo.url>
+        <swtbot-repo.url>http://download.eclipse.org/technology/swtbot/releases/2.1.1/</swtbot-repo.url>
+ 
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 	<modules>
 		<module>de.monkeyworks.natspec.library.swtbot</module>
@@ -26,17 +33,60 @@
 	</modules>
 
 	<repositories>
-		<repository>
-			<id>kepler</id>
-			<url>${kepler-repo.url}</url>
-			<layout>p2</layout>
-		</repository>
-		<repository>
-			<id>swtbot</id>
-			<url>${swtbot-repo.url}</url>
-			<layout>p2</layout>
-		</repository>
-	</repositories>
+        <repository>
+            <id>emf-p2</id>
+            <layout>p2</layout>
+            <url>${emf-p2-repo.url}</url>
+        </repository>
+ 
+        <repository>
+            <id>emftransaction-p2</id>
+            <layout>p2</layout>
+            <url>${emftransaction-p2-repo.url}</url>
+        </repository>
+ 
+        <repository>
+            <id>emfvalidation-p2</id>
+            <layout>p2</layout>
+            <url>${emfvalidation-p2-repo.url}</url>
+        </repository>
+ 
+        <repository>
+            <id>emftext-p2</id>
+            <layout>p2</layout>
+            <url>${emftext-p2-repo.url}</url>
+        </repository>
+ 
+        <repository>
+            <id>gef-p2</id>
+            <layout>p2</layout>
+            <url>${gef-p2-repo.url}</url>
+        </repository>
+ 
+        <repository>
+            <id>epsilon-p2</id>
+            <url>${epsilon-p2-repo.url}</url>
+            <layout>p2</layout>
+        </repository>
+ 
+        <repository>
+            <id>kepler</id>
+            <url>${kepler-repo.url}</url>
+            <layout>p2</layout>
+        </repository>
+ 
+        <repository>
+            <id>natspec-p2</id>
+            <url>${natspec-p2-repo.url}</url>
+            <layout>p2</layout>
+        </repository>
+ 
+        <repository>
+            <id>swtbot</id>
+            <url>${swtbot-repo.url}</url>
+            <layout>p2</layout>
+        </repository>
+    </repositories>
 
 	<build>
 		<plugins>
