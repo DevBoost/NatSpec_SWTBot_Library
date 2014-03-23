@@ -16,8 +16,8 @@
         <tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
         <kepler-repo.url>http://download.eclipse.org/eclipse/updates/4.3/R-4.3.1-201309111000</kepler-repo.url>
         <emf-p2-repo.url>http://download.eclipse.org/modeling/emf/emf/updates/releases/</emf-p2-repo.url>
-        <emftransaction-p2-repo.url>http://movisa.monkey-works.de/3rd-party-deps/org/eclipse/emf/transaction</emftransaction-p2-repo.url>
-        <emfvalidation-p2-repo.url>http://movisa.monkey-works.de/3rd-party-deps/org/eclipse/emf/validation</emfvalidation-p2-repo.url>
+        <emftransaction-p2-repo.url>http://developer.monkey-works.de/3rd-party-deps/org/eclipse/emf/transaction</emftransaction-p2-repo.url>
+        <emfvalidation-p2-repo.url>http://developer.monkey-works.de/3rd-party-deps/org/eclipse/emf/validation</emfvalidation-p2-repo.url>
         <emftext-p2-repo.url>http://emftext.org/update</emftext-p2-repo.url>
         <gef-p2-repo.url>http://download.eclipse.org/tools/gef/updates/releases/</gef-p2-repo.url>
         <epsilon-p2-repo.url>http://download.eclipse.org/epsilon/updates/</epsilon-p2-repo.url>
