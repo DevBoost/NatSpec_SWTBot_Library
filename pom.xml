@@ -10,8 +10,8 @@
 	<name>NatSpec SWTBot Library</name>
 
 	<properties>
-        <tycho.version>0.17.0</tycho.version>
-        <tycho-extras.version>0.17.0</tycho-extras.version>
+        <tycho.version>0.19.0</tycho.version>
+        <tycho-extras.version>0.19.0</tycho-extras.version>
  
         <tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
         <kepler-repo.url>http://download.eclipse.org/eclipse/updates/4.3/R-4.3.1-201309111000</kepler-repo.url>
